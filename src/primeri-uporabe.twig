@@ -1,0 +1,231 @@
+{% set page = 'Primeri uporabe' %}
+{% set body_class = 'showcases' %}
+{% set header_class = '' %}
+{% set language = 'sl' %}
+{% extends "partials/_layout.twig" %}
+
+{% block content %}
+	<section class="top_content">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="">
+						<h2>Primeri uporabe</h2>
+						<p class="opacity-80">Nekaj primerov, kako lahko podjetja z uporabo Kumuluz Crowdsensing povečajo svojo prodajo.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="container">
+			<!-- Nav tabs -->
+			<ul class="nav justify-content-center" id="" role="tablist">
+			  <li class="nav-item" role="presentation">
+			    <a class=" active" id="smart-cities-tab" data-bs-toggle="tab" data-bs-target="#smart-cities" type="button" role="tab" aria-selected="false">
+						<img src="assets/img/icons/icon-smartCity.svg" alt="">
+						<span>Pametna mesta</span>
+					</a>
+			  </li>
+				<li class="nav-item" role="presentation">
+			    <a class="" id="traffic-tab" data-bs-toggle="tab" data-bs-target="#traffic" type="button" role="tab" aria-selected="false">
+						<img src="assets/img/icons/icon-traffic.svg" alt="">
+						<span>Prevoz</span>
+					</a>
+			  </li>
+			  <li class="nav-item" role="presentation">
+			    <a class=" " id="food-and-drinks-tab" data-bs-toggle="tab" data-bs-target="#food-and-drinks" type="button" role="tab" aria-selected="true">
+						<img src="assets/img/icons/icon-foodDrink.svg" alt="">
+						<span>Hrana in pijača</span>
+					</a>
+			  </li>
+				<li class="nav-item" role="presentation">
+			    <a class="" id="shop-tab" data-bs-toggle="tab" data-bs-target="#shop" type="button" role="tab" aria-selected="false">
+						<img src="assets/img/icons/icon-shop.svg" alt="">
+						<span>Trgovina</span>
+					</a>
+			  </li>
+				<li class="nav-item" role="presentation">
+			    <a class="" id="fashion-tab" data-bs-toggle="tab" data-bs-target="#fashion" type="button" role="tab" aria-selected="false">
+						<img src="assets/img/icons/icon-fashion.svg" alt="">
+						<span>Moda</span>
+					</a>
+			  </li>
+				<li class="nav-item" role="presentation">
+			    <a class="" id="events-tab" data-bs-toggle="tab" data-bs-target="#events" type="button" role="tab" aria-selected="false">
+						<img src="assets/img/icons/icon-events.svg" alt="">
+						<span>Dogodki</span>
+					</a>
+			  </li>
+
+			</ul>
+
+			<!-- Tab panes -->
+			<div class="tab-content">
+			  <div class="tab-pane active" id="smart-cities" role="tabpanel">
+					<div class="step row">
+						<div class="text col-lg-6">
+							<div class="number">1</div>
+							Tone je okoljsko ozaveščen, zato se je odločil za električni avto. Električni avto pa zahteva večkratno polnjenje. Rešitev mu omogoča pregled prostih polnilnic, cen, rezervacijo mesta, zaznavanje polnilnice, da se približuje, avtomatska sprostitev rezervacije, ko se Tone odpelje stran ali ne zavije na polnilnico in še več.
+						</div>
+						<div class="image col-lg-6">
+							<img src="assets/img/primer-pametnoMesto.png" alt="" class="img-fluid mb-5">
+							<div class="sms-cloud">
+								<div class="sms">
+									Dragi Tone, vaše parkirno mesto z električno polnilnico je rezervirano. Mesto vas bo čakalo 20 minut, cena za polno polnjenje znaša 30 EUR in bo trajalo 45 minut.
+								</div>
+								<div class="sender">
+									<img src="assets/img/icons/icon-human.png" alt="">
+									<span>KUMULUZ</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane" id="traffic" role="tabpanel">
+					<div class="step row">
+						<div class="text col-lg-6">
+							<div class="number">1</div>
+							Janez se vsako jutro okoli 8h z avtom odpelje proti službi. Vedno gre po isti, najhitrejši poti. Tudi včeraj se je ravno odpravljal od doma, ko je dobil mobilno obvestilo:
+						</div>
+						<div class="image col-lg-6">
+							<img src="assets/img/primer-prevoz.png" alt="" class="img-fluid mb-5">
+							<div class="sms-cloud">
+								<div class="sms">
+									Dragi Janez, na Dunajski cesti se je zgodila nesreča in en vozni pas je zaprt. Priporočamo obvoz. Naši bencinski servisi se nahajajo tudi na obvozni poti.
+								</div>
+								<div class="sender">
+									<img src="assets/img/icons/icon-human.png" alt="">
+									<span>KUMULUZ</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			  <div class="tab-pane" id="food-and-drinks" role="tabpanel">
+					<div class="step row">
+						<div class="text col-lg-6">
+							<div class="number">1</div>
+							Na integriranem zemljevidu označite območje okrog vaše restavracije. Ko ljudje vstopijo v to območje, jim pošljite SMS s posebno ponudbo.
+						</div>
+						<div class="image col-lg-6">
+							<img src="assets/img/primer-hrana1.png" alt="" class="img-fluid">
+						</div>
+					</div>
+					<div class="step row">
+						<div class="text col-lg-6">
+							<div class="number">2</div>
+							SMS sporočilo personalizirajte in ga prilagodite glede na čas. V času kosila pošljite na primer tako SMS sporočilo:
+						</div>
+						<div class="image col-lg-6">
+							<div class="sms-cloud">
+								<div class="sms">
+									Draga Jana, si lačna? Poskusi naš novi dvojni hamburger in zraven ti bomo dali solato brezplačno. Naša restavracija je tik za vogalom. Klikni tukaj in naroči vnaprej, da se izogneš čakanju v vrsti.
+								</div>
+								<div class="sender">
+									<img src="assets/img/icons/icon-human.png" alt="">
+									<span>KUMULUZ</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="step row">
+						<div class="text col-lg-6">
+							<div class="number">3</div>
+							V petek zvečer naj ima SMS drugačno vsebino:
+						</div>
+						<div class="image col-lg-6">
+							<img src="assets/img/primer-hrana2.png" alt="" class="img-fluid mb-5">
+							<div class="sms-cloud">
+								<div class="sms">
+									Jana, si cel teden trdo delala? Čas je za počitek. Ne zamudi veselih uric med 19:00 in 21:00 💃. Naroči 1 koktajl in 1 dobiš brezplačno. 🍸
+								</div>
+								<div class="sender">
+									<img src="assets/img/icons/icon-human.png" alt="">
+									<span>KUMULUZ</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane" id="shop" role="tabpanel">
+					<div class="step row">
+						<div class="text col-lg-6">
+							<div class="number">1</div>
+							V vašo mobilno aplikacijo dodajte možnost za pisanje nakupovalnega seznama. Ko se vaši kupci med sprehodom po mestu približujejo eni izmed vaših trgovin, jim pošljite mobilno obvestilo, da jih opomnite na izdelke iz seznama.
+						</div>
+						<div class="image col-lg-6">
+							<img src="assets/img/primer-trgovina.png" alt="" class="img-fluid">
+						</div>
+					</div>
+					<div class="step row">
+						<div class="text col-lg-6">
+							<div class="number">2</div>
+							Ko kupec vstopi v trgovino, naj ji aplikacija ponudi optimalno pot skozi trgovino za nakup vseh izdelkov iz nakupovalnega seznama. Ko konča z nakupom, mu pošljite mobilno obvestilo o novem stanju točk zvestobe in opis možnosti, kako jih lahko izkoristi.
+						</div>
+						<div class="image col-lg-6">
+							<div class="sms-cloud">
+								<div class="sms">
+									Doma vam zmanjkuje pralnega praška. Kupite ga lahko v naši trgovini na Čopovi ulici 11, ki je le 100m od tod. Ta teden še niste izkoristili kupona za 25% popust na 1 izdelek po izbiri. Zakaj ga ne bi izkoristili sedaj?
+								</div>
+								<div class="sender">
+									<img src="assets/img/icons/icon-human.png" alt="">
+									<span>KUMULUZ</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane" id="fashion" role="tabpanel">
+					<div class="step row">
+						<div class="text col-lg-6">
+							<div class="number">1</div>
+							V vaši spletni trgovini spremljajte, katere artikle so si stranke ogledovale. Oblačila, ki so si jih najbolj ogledovale, kombinirajte z drugimi kosi in jih ponudite v paketu. Stranki pošljite e-pošto:
+						</div>
+						<div class="image col-lg-6">
+							<img src="assets/img/primer-moda.png" alt="" class="img-fluid">
+						</div>
+					</div>
+					<div class="step row">
+						<div class="text col-lg-6">
+							<div class="number">2</div>
+							Če se stranka ne odloči za nakup, ji čez 3 dni pošljite SMS z vsebino:
+						</div>
+						<div class="image col-lg-6">
+							<div class="sms-cloud">
+								<div class="sms">
+									Pozdravljeni, Jana, naša stilistka bo danes ob 18:00 v bližini vašega doma in vam lahko izbrano kombinacijo predstavi kar na domu. Odgovorite s ključno besedo NOVAOBLEKA za obisk stilistke.
+								</div>
+								<div class="sender">
+									<img src="assets/img/icons/icon-human.png" alt="">
+									<span>KUMULUZ</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane" id="events" role="tabpanel">
+					<div class="step row">
+						<div class="text col-lg-6">
+							<div class="number">1</div>
+							Kot sponzor dogodka povečajte moč svoje blagovne znamke in udeležencem dogodka pošljite relevantna sporočila. Udeležencem glasbenega festivala pošljite mobilno obvestilo z naslednjo vsebino:
+						</div>
+						<div class="image col-lg-6">
+							<img src="assets/img/primer-dogodki.png" alt="" class="img-fluid mb-5">
+							<div class="sms-cloud">
+								<div class="sms">
+									Čez pol ure se na glavnem odru začne nastop tvoje najljubše skupine!! 😄😄 Na poti do tja se ustavi na naši stojnici, kjer te čaka plastenka vode – da preprečiš dehidriranost. Skrbimo za tvoje zdravje, ponosni sponzor XYZ.
+								</div>
+								<div class="sender">
+									<img src="assets/img/icons/icon-human.png" alt="">
+									<span>KUMULUZ</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+{% endblock %}

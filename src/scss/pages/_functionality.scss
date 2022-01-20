@@ -1,0 +1,48 @@
+body.functionality,
+body.technology {
+	#main {
+		.container {
+			position: relative;
+		}
+	}
+	.img-wrapper {
+			background: #F4F5F5;
+			padding: 2.5rem;
+			margin-bottom: 2rem;
+	}
+	.ss-wrapper {
+		position: -webkit-sticky; /* Safari */
+	  position: sticky;
+	  top: 150px;
+		p {
+			a {
+				color: $lightblue;
+				padding: 0;
+				border: none;
+				&:nth-child(1) {
+					border: none;
+				}
+			}
+		}
+		a {
+			position: relative;
+			display: block;
+			padding: 1rem 0;
+			color: $black;
+			border:none;
+			border-bottom: 1px solid #F4F5F5;
+			font-size: 1rem;
+			&:nth-child(1) {
+				border-top: 1px solid #F4F5F5;
+			}
+			&.active {
+				background: none;
+				font-weight: 600;
+				color: $darkblue;
+			}
+			&:hover {
+				color: $darkblue;
+			}
+		}
+	}
+}

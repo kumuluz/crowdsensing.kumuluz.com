@@ -1,0 +1,75 @@
+body.contact {
+	#main {
+		padding-top: 0;
+		.top_content {
+
+		}
+    .contact-form {
+
+      label {
+        font-weight: 700;
+      }
+
+      input, select, textarea {
+        background: transparent !important;
+        border: none;
+        border-bottom: 2px solid #5dc2ef !important;
+        padding: 3px;
+        font-size: 1.125rem;
+        outline: none !important;
+        box-shadow: none !important;
+        border-radius: 0 !important;
+      }
+
+      input option, select option, textarea option {
+        color: #2b2b6f;
+      }
+
+      input::-webkit-input-placeholder, textarea::-webkit-input-placeholder, input:-ms-input-placeholder, textarea:-ms-input-placeholder, input::-ms-input-placeholder, textarea::-ms-input-placeholder {
+        color: #ccc;
+      }
+
+      input {
+        &::placeholder, &:invalid option {
+          color: #ccc;
+        }
+      }
+
+      textarea {
+        resize: none;
+      }
+
+      textarea::placeholder {
+        color: #ccc;
+      }
+
+      .form-text {
+        color: #5dc2ef !important;
+      }
+
+			label.error {
+				font-size: 0.8rem;
+				font-weight: 400;
+				color: $red;
+			}
+
+      &.light {
+        color: #333;
+
+        label {
+          font-weight: 600;
+        }
+
+        input, select, textarea {
+          color: #333 !important;
+        }
+      }
+    }
+    .social-icons {
+      svg {
+        width: 50px;
+        fill: $darkblue;
+      }
+    }
+  }
+}

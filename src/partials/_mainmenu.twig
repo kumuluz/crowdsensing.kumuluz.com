@@ -1,0 +1,16 @@
+<!-- mainmenu -->
+<ul class="navbar-nav">
+{% for lang, items in links %}
+	{% if lang == language%}
+	  {% for link in items %}
+		  <li class="nav-item {% if body_class == link.id %} active{% endif %}">
+				<a class="nav-link" href="{{ link.url }}.html">
+					{{ link.title }}
+				</a>
+		  </li>
+	  {% endfor %}
+	{% endif %}
+{% endfor %}
+	
+</ul>
+{% include '_language-picker.twig' %}

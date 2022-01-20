@@ -1,0 +1,231 @@
+{% set page = 'Case studies' %}
+{% set body_class = 'showcases' %}
+{% set header_class = '' %}
+{% set language = 'en' %}
+{% extends "partials/_layout.twig" %}
+
+{% block content %}
+	<section class="top_content">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="">
+						<h2>Case studies</h2>
+						<p class="opacity-80">Look at the cases below and explore how you can increase your sales with Kumuluz Crowdsensing.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="container">
+			<!-- Nav tabs -->
+			<ul class="nav justify-content-center" id="" role="tablist">
+			  <li class="nav-item" role="presentation">
+			    <a class=" active" id="smart-cities-tab" data-bs-toggle="tab" data-bs-target="#smart-cities" type="button" role="tab" aria-selected="false">
+						<img src="assets/img/icons/icon-smartCity.svg" alt="">
+						<span>Smart cities</span>
+					</a>
+			  </li>
+				<li class="nav-item" role="presentation">
+			    <a class="" id="traffic-tab" data-bs-toggle="tab" data-bs-target="#traffic" type="button" role="tab" aria-selected="false">
+						<img src="assets/img/icons/icon-traffic.svg" alt="">
+						<span>Transport</span>
+					</a>
+			  </li>
+			  <li class="nav-item" role="presentation">
+			    <a class=" " id="food-and-drinks-tab" data-bs-toggle="tab" data-bs-target="#food-and-drinks" type="button" role="tab" aria-selected="true">
+						<img src="assets/img/icons/icon-foodDrink.svg" alt="">
+						<span>Food and drink</span>
+					</a>
+			  </li>
+				<li class="nav-item" role="presentation">
+			    <a class="" id="shop-tab" data-bs-toggle="tab" data-bs-target="#shop" type="button" role="tab" aria-selected="false">
+						<img src="assets/img/icons/icon-shop.svg" alt="">
+						<span>Retail</span>
+					</a>
+			  </li>
+				<li class="nav-item" role="presentation">
+			    <a class="" id="fashion-tab" data-bs-toggle="tab" data-bs-target="#fashion" type="button" role="tab" aria-selected="false">
+						<img src="assets/img/icons/icon-fashion.svg" alt="">
+						<span>Fashion</span>
+					</a>
+			  </li>
+				<li class="nav-item" role="presentation">
+			    <a class="" id="events-tab" data-bs-toggle="tab" data-bs-target="#events" type="button" role="tab" aria-selected="false">
+						<img src="assets/img/icons/icon-events.svg" alt="">
+						<span>Events</span>
+					</a>
+			  </li>
+
+			</ul>
+
+			<!-- Tab panes -->
+			<div class="tab-content">
+			  <div class="tab-pane active" id="smart-cities" role="tabpanel">
+					<div class="step row">
+						<div class="text col-lg-6">
+							<div class="number">1</div>
+							Anthony is ecologically aware and decided to buy an electric car. An electric car, however, needs to be charged several times. Our solution offers him an overview of the available charging stations, prices, reservations, proximity sensing, automatic reservation release when he drives away or drives past, and much more.
+						</div>
+						<div class="image col-lg-6">
+							<img src="assets/img/primer-pametnoMesto-eng.png" alt="" class="img-fluid mb-5">
+							<div class="sms-cloud">
+								<div class="sms">
+									Dear Anthony, your parking space with an e-charger has been reserved. The space will be reserved for 20 minutes. The price for a full charge is 30$. It will take 45 minutes.
+								</div>
+								<div class="sender">
+									<img src="assets/img/icons/icon-human.png" alt="">
+									<span>KUMULUZ</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane" id="traffic" role="tabpanel">
+					<div class="step row">
+						<div class="text col-lg-6">
+							<div class="number">1</div>
+							John departs for work every morning at 8am with his car. He always takes the same route, that is, the fastest one. Yesterday, he was just getting ready to drive off to work, when he got a push notification:
+						</div>
+						<div class="image col-lg-6">
+							<img src="assets/img/primer-prevoz.png" alt="" class="img-fluid mb-5">
+							<div class="sms-cloud">
+								<div class="sms">
+									Dear John, there was an accident on Goswell Rd and one lane is closed. We recommend a detour. Our gas stations can be found on the detour routes.
+								</div>
+								<div class="sender">
+									<img src="assets/img/icons/icon-human.png" alt="">
+									<span>KUMULUZ</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			  <div class="tab-pane" id="food-and-drinks" role="tabpanel">
+					<div class="step row">
+						<div class="text col-lg-6">
+							<div class="number">1</div>
+							Define the area around your restaurant in the integrated map. When people enter this area, send them an SMS message with a special offer.
+						</div>
+						<div class="image col-lg-6">
+							<img src="assets/img/primer-hrana1.png" alt="" class="img-fluid">
+						</div>
+					</div>
+					<div class="step row">
+						<div class="text col-lg-6">
+							<div class="number">2</div>
+							Personalize the message and customize it to fit the time of sending. During lunchtime, for example, send one of these:
+						</div>
+						<div class="image col-lg-6">
+							<div class="sms-cloud">
+								<div class="sms">
+									Dear Jane. Are you hungry? Try our new double cheeseburger and get a salad for free. Our restaurant is just around the corner. Click here to order ahead and skip the line.
+								</div>
+								<div class="sender">
+									<img src="assets/img/icons/icon-human.png" alt="">
+									<span>KUMULUZ</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="step row">
+						<div class="text col-lg-6">
+							<div class="number">3</div>
+							On Friday evening, the SMS would be different:
+						</div>
+						<div class="image col-lg-6">
+							<img src="assets/img/primer-hrana2.png" alt="" class="img-fluid mb-5">
+							<div class="sms-cloud">
+								<div class="sms">
+									Jana, been working hard all week? It’s time to relax. Don’t miss our happy hours from 19:00 till 21:00 Order a cocktail and get the second one for free.
+								</div>
+								<div class="sender">
+									<img src="assets/img/icons/icon-human.png" alt="">
+									<span>KUMULUZ</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane" id="shop" role="tabpanel">
+					<div class="step row">
+						<div class="text col-lg-6">
+							<div class="number">1</div>
+							Allow customers to create shopping lists in your application. When they are walking around the city and get close to one of your shops, send them a reminder about shopping list items with a push notification.
+						</div>
+						<div class="image col-lg-6">
+							<img src="assets/img/primer-trgovina-eng.png" alt="" class="img-fluid">
+						</div>
+					</div>
+					<div class="step row">
+						<div class="text col-lg-6">
+							<div class="number">2</div>
+							When a customer enters the store, the app can offer him/her the optimal path through the store to buy all the items from their shopping list. When the customer is finished shopping, send them a push notification with the status of loyalty points and instructions on how to use them.
+						</div>
+						<div class="image col-lg-6">
+							<div class="sms-cloud">
+								<div class="sms">
+									You are running out of a washing powder. You can buy it in our store at 206 Lexington Street, which is only 100m away. You still have this week’s coupon for 25% off for 1 item. Why don’t you redeem it now?
+								</div>
+								<div class="sender">
+									<img src="assets/img/icons/icon-human.png" alt="">
+									<span>KUMULUZ</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane" id="fashion" role="tabpanel">
+					<div class="step row">
+						<div class="text col-lg-6">
+							<div class="number">1</div>
+							Keep track of which items your customers had been viewing in your online store. Combine the clothes that they have searched for the most with other pieces and offer them as a combo. Send the customer an e-mail like:
+						</div>
+						<div class="image col-lg-6">
+							<img src="assets/img/primer-moda-eng.png" alt="" class="img-fluid">
+						</div>
+					</div>
+					<div class="step row">
+						<div class="text col-lg-6">
+							<div class="number">2</div>
+							Should the customer not decide to purchase the clothes after 3 days, you can send an SMS saying:
+						</div>
+						<div class="image col-lg-6">
+							<div class="sms-cloud">
+								<div class="sms">
+									Hi Jane, our stylist will be near your home today at 6:00pm and can do a home presentation of the selected pieces for you. Reply with keyword NEWDRESS and she will visit you.
+								</div>
+								<div class="sender">
+									<img src="assets/img/icons/icon-human.png" alt="">
+									<span>KUMULUZ</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane" id="events" role="tabpanel">
+					<div class="step row">
+						<div class="text col-lg-6">
+							<div class="number">1</div>
+							As a sponsor of the event, increase the strength of your brand and send relevant messages to attendees. Send a push notification to the participants of a music festival saying:
+						</div>
+						<div class="image col-lg-6">
+							<img src="assets/img/primer-dogodki.png" alt="" class="img-fluid mb-5">
+							<div class="sms-cloud">
+								<div class="sms">
+									Your favorite band will be playing in half an hour on the main stage! You’re welcome to stop at our stand on your way there and get a free bottle of water, preventing dehydration. Taking care of your health, XYZ, the proud sponsor
+								</div>
+								<div class="sender">
+									<img src="assets/img/icons/icon-human.png" alt="">
+									<span>KUMULUZ</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+{% endblock %}

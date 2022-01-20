@@ -1,0 +1,48 @@
+{% extends "_config.twig" %}
+{% block html %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<title>{{ page }} - Sunesis</title>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+	<style type="text/css">
+	@import url("https://fonts.googleapis.com/css2?family=Asap:wght@400;600;700;800&display=swap");
+	</style>
+
+		<!-- build:css css/combined.css -->
+		<link rel="stylesheet" href="./css/bootstrap.min.css">
+		<link rel="stylesheet" href="./css/style.css">
+		<!-- endbuild -->
+    </head>
+
+    <body class="{{ body_class }}">
+
+    {% include '_header.twig' %}
+
+    <div id="main">
+      {% block content %}{% endblock %}
+    </div>
+
+    {% include '_footer_' ~ language ~ '.twig' %}
+
+	<!-- build:js js/combined.js -->
+      <script type="text/javascript" src="./js/jquery.min.js"></script>
+      <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="./js/validation.min.js"></script>
+      <script type="text/javascript" src="./js/custom.js"></script>
+	  {% block inlinescripts %}{% endblock %}
+	 <!-- endbuild -->
+    </body>
+</html>
+{% endblock %}

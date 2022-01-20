@@ -1,0 +1,69 @@
+{# GLOBAL CONFIG #}
+{%
+	set links = {
+		sl: [
+			{
+				id: 'functionality',
+				url: 'funkcionalnosti',
+				title: 'Funkcionalnosti'
+			},
+			{
+				id: 'technology',
+				url: 'tehnologija',
+				title: 'Tehnologija'
+			},
+			{
+				id: 'smart-cities',
+				url: 'pametna-mesta',
+				title: 'Pametna mesta'
+			},
+			{
+				id: 'showcases',
+				url: 'primeri-uporabe',
+				title: 'Primeri uporabe'
+			},
+			{
+				id: 'contact',
+				url: 'kontakt',
+				title: 'Kontakt'
+			}
+		],
+		en: [
+			{
+				id: 'functionality',
+				url: 'features',
+				title: 'Features'
+			},
+			{
+				id: 'technology',
+				url: 'technology',
+				title: 'Technology'
+			},
+			{
+				id: 'smart-cities',
+				url: 'smart-cities',
+				title: 'Smart cities'
+			},
+			{
+				id: 'showcases',
+				url: 'case-studies',
+				title: 'Case studies'
+			},
+			{
+				id: 'contact',
+				url: 'contact',
+				title: 'Contact'
+			}
+		]
+	}
+%}
+{%
+	set defaultLanguage = 'sl'
+%}
+{%
+	set languages = [
+	  { code: 'sl', title: 'Slovenščina' },
+	  { code: 'en', title: 'English' }
+	]
+%}
+{% block html %}{% endblock %}

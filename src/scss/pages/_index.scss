@@ -1,0 +1,314 @@
+body.index {
+	#main {
+		padding-top: 0;
+		.top_content {
+			.features {
+				padding-top: 170px;
+				div[class*="col-"] {
+					padding-right: 60px;
+				}
+			}
+		}
+		section {
+			&#smart-cities-summary {
+
+			}
+			&#reason {
+				div[class*="col-"] {
+					position: relative;
+				}
+				.circles {
+					position: absolute;
+					left: -322px;
+					top: -406px;
+					z-index: -1;
+				}
+
+			}
+			&#flow {
+				padding: 4rem 0;
+				background: #F4F5F5;
+				h2 {
+					margin-bottom: 6rem;
+					@include mq($until: desktop) {
+			      margin-bottom: 3rem;
+			    }
+				}
+				.flow-wrapper {
+					position: relative;
+					.hover-elements {
+						.wrap {
+							position: absolute;
+							width: 33%;
+							height: 100%;
+							top: 0;
+							@include transition(all 0.3s ease-in-out);
+							@include mq($until: wide) {
+								display: none;
+							}
+							&:hover {
+								background: rgba(0, 0, 0, 0.05);
+								img.cube, .cloud {
+									opacity: 1;
+								}
+							}
+							img.cube, .cloud {
+								@include transition(all 0.3s ease-in-out);
+								opacity: 0;
+							}
+						}
+						.wrap-1 {
+							img.cube {
+								margin: 0;
+								position: absolute;
+								left: 161px;
+								top: 162px;
+							}
+							.cloud {
+								margin-left: -5px;
+							}
+						}
+						.wrap-2 {
+							left: 33%;
+							width: 34%;
+							img.cube {
+								margin: 0;
+								position: absolute;
+								left: 172px;
+								top: 163px;
+							}
+						}
+						.wrap-3 {
+							left: 67%;
+							img.cube {
+								margin: 0;
+								position: absolute;
+								left: 172px;
+								top: 31px;
+							}
+							.cloud {
+								top: 115px;
+								margin-left: 5px;
+								&:after {
+									bottom: auto;
+									top: -5px;
+								}
+							}
+						}
+						.cloud {
+							width: 60%;
+							left: 20%;
+							background: #fff;
+							text-align: center;
+							padding: .5rem 0;
+							color: $blue;
+							font-weight: 600;
+							text-transform: uppercase;
+							border-radius: 4px;
+							white-space: nowrap;
+							position: absolute;
+							top: 95px;
+							&:after {
+								width: 5px;
+								height: 5px;
+								background: #fff;
+								content: "";
+								position: absolute;
+								bottom: -5px;
+								left: 50%;
+								margin-left: -2.5px;
+							}
+							img {
+								margin: 0;
+								width: 35px;
+								height: auto;
+								display: inline;
+							}
+						}
+					}
+				}
+				img {
+					margin: 0 auto 3.5rem;
+					display: block;
+					&.static, &.vertical {
+						display: none;
+					}
+					&.static {
+						@include mq($until: wide, $from: tablet) {
+							display: block;
+						}
+					}
+					&.desktop {
+						@include mq($until: wide) {
+							display: none;
+						}
+					}
+					&.vertical {
+						@include mq($until: tablet) {
+							display: block;
+						}
+					}
+				}
+				.col-title {
+					h5 {
+						text-transform: uppercase;
+						color: $blue;
+					}
+				}
+			}
+			&#capabilities {
+				padding-bottom: 2rem;
+				.intro {
+					width: 430px;
+					margin: 0 auto 5rem;
+					@include mq($until: desktop) {
+			      width: auto;
+			    }
+				}
+				.accordion {
+					width: 780px;
+					margin: 0 auto;
+					@include mq($until: desktop) {
+			      width: auto;
+			    }
+					.accordion-item {
+						border: none;
+						.accordion-header {
+							padding-top: 1.3rem;
+						}
+					}
+					.accordion-button {
+						font-size: rem(24px);
+						font-weight: 400;
+						border: none;
+						border-radius: 4px;
+						color: $darkblue;
+						cursor: pointer;
+						padding: 0.75rem 1.5rem;
+						background: #F4F5F5;
+						box-shadow: none;
+						&:after {
+							background-image: url(../assets/img/accordion-minus.png);
+							transform: rotate(0);
+							margin-top: 17px;
+						}
+						&.collapsed {
+							background: radial-gradient(38.08% 495% at 92.18% 50%, #254A99 0%, #2B2B6F 96.53%), #2B2B6F;
+							color: $lightblue;
+							font-weight: 600;
+							&:after {
+								background-image: url(../assets/img/accordion-plus.png);
+								margin-top: 0px;
+							}
+						}
+					}
+					.accordion-body {
+						padding: 2rem 1.5rem;
+						padding-bottom: 0;
+					}
+				}
+				.logos {
+					padding-top: 4rem;
+					font-size: rem(16px);
+					font-style: italic;
+					span {
+						margin-bottom: 2rem;
+						text-align: center;
+						color: #C4C4C4;
+					}
+					img {
+						margin: 0 auto;
+						display: block;
+					}
+				}
+			}
+			&#smart-cities {
+				background: #F4F5F5;
+				overflow: hidden;
+				position: relative;
+				padding-top: 4rem;
+				h2 {
+					margin-bottom: 4rem;
+				}
+				.sms-cloud {
+					width: 340px;
+					height: 220px;
+					margin: 0 15px 30px 15px;
+					@include mq($until: wide) {
+			      width: auto;
+			    }
+					@include mq($until: desktop) {
+			      height: auto;
+			    }
+					// @include transition(all .3s ease-in-out);
+					cursor: pointer;
+					&:before,
+					&:after {
+						display: none;
+					}
+					&:hover {
+						background: $darkblue;
+						color: #fff;
+						&:before,
+						&:after {
+							display: block;
+						}
+					}
+				}
+				.empty_case {
+					background: #DADADA;
+					border-radius: 4px;
+					width: 340px;
+					height: 220px;
+					margin: 0 15px 0px 15px;
+					@include mq($until: wide) {
+			      width: auto;
+			    }
+				}
+				.container-1,
+				.container-3, {
+					display: flex;
+					justify-content: center;
+					@include mq($until: desktop) {
+			      display: block;
+			    }
+				}
+				.container-2 {
+					position: relative;
+					margin-left: 170px;
+					height: 250px;
+					@include mq($until: wide) {
+			      height: auto;
+						margin-left:0;
+			    }
+					.inner {
+						position: absolute;
+						display: flex;
+						left: 50%;
+						transform: translateX(-50%);
+						@include mq($until: wide) {
+							position: relative;
+							left: auto;
+							transform: translateX(0);
+				    }
+						@include mq($until: desktop) {
+				      display: block;
+				    }
+					}
+					.empty_case {
+						@include mq($until: wide) {
+				      display: none;
+				    }
+					}
+				}
+				.container-3 {
+					position: absolute;
+					bottom: -125px;
+					margin-left: -190px;
+					left: 50%;
+					transform: translateX(-50%);
+				}
+			}
+		}
+	}
+}

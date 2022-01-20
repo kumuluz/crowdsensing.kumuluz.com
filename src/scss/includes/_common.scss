@@ -1,0 +1,229 @@
+html {
+	font-size: 16px;
+}
+
+[type=button], [type=reset], [type=submit], button {
+	-webkit-appearance: none;
+}
+
+body {
+	font-family: $font-asap;
+	color: $black;
+	background: $white;
+	font-size: rem(18px);
+	line-height: 150%;
+	position: relative;
+}
+
+.opacity-80 {
+	opacity: 0.8;
+}
+
+.container {
+	@include mq($from: wide) {
+		max-width: 1204px;
+	}
+}
+
+#back-to-top {
+	cursor: pointer;
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	right: 30px;
+	bottom: 30px;
+	background: #fff;
+	border: 2px solid $lightblue;
+	padding: 9px 8px 8px 12px;
+	transform: rotate(180deg);
+	opacity: 0;
+	@include transition(all 0.3s ease-in-out);
+	svg {
+		width: 20px;
+	}
+}
+
+.icon_box {
+	display: flex;
+	margin-bottom: 3rem;
+	@include mq($until: desktop) {
+    margin-bottom: 1rem;
+  }
+	.icon {
+		margin-right: 1rem;
+	}
+	.text {
+		padding-right: 1rem;
+		h3 {
+			color: $darkblue;
+		}
+	}
+}
+
+.button {
+	background: $lightblue;
+	color: $darkblue;
+	border: 1px solid $lightblue;
+	display: inline-block;
+	text-decoration: none;
+	padding: 0.75rem 2rem;
+	font-size: 1rem;
+	line-height: rem(24px);
+	font-weight: 600;
+	text-transform: uppercase;
+	@include transition(all .3s ease-in-out);
+	&:hover {
+		color: $darkblue;
+		background: $white;
+		border-color: $lightblue;
+	}
+}
+
+p {
+	margin-bottom: 2rem;
+}
+
+ul {
+	@include reset_list();
+	&.square-bullet {
+		margin-bottom: 2rem;
+		li {
+			margin-bottom: 1rem;
+			position: relative;
+			padding-left: 1.5rem;
+			&:before {
+				width: 6px;
+				height: 6px;
+				background: $lightblue;
+				content: "";
+				display: inline-block;
+				vertical-align: 3px;
+				left: 0;
+				position: absolute;
+				top: 10px;
+			}
+		}
+	}
+}
+
+.divider {
+	width: 100%;
+	height: 5px;
+	background: linear-gradient(90.07deg, #FFFFFF 2.13%, #5DC2EF 98.62%);
+	transform: rotate(-180deg);
+	margin: 3.5rem 0;
+	&.thin {
+		height: 1px;
+		background: #DADADA;
+	}
+}
+
+blockquote {
+	margin-bottom: 2rem;
+	font-style: italic;
+	position: relative;
+	padding-left: 1.5rem;
+	&:before {
+		/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,5dc2ef+100 */
+		background: #ffffff; /* Old browsers */
+		background: -moz-linear-gradient(top,  #ffffff 0%, #5dc2ef 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top,  #ffffff 0%,#5dc2ef 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom,  #ffffff 0%,#5dc2ef 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#5dc2ef',GradientType=0 ); /* IE6-9 */
+		width: 5px;
+		height: 100%;
+		content: "";
+		display: block;
+		position: absolute;
+		left: 0;
+	}
+}
+
+.sms-cloud {
+	border: 1px solid #DADADA;
+	border-radius: 4px;
+	background: #fff;
+	padding: 3rem;
+	position: relative;
+	&:before {
+		display: block;
+		 height: 37px;
+		 width: 37px;
+		 background-color: inherit;
+		 border: inherit;
+		 position: absolute;
+			bottom: -10px;
+			left: -15px;
+			top: -15px;
+			clip-path: polygon(49% 35%, 0% 100%, 100% 100%);
+			transform: rotate(53deg);
+			border-radius: 0 0 0 4px;
+			content: "";
+	}
+	&:after {
+		position: absolute;
+		content: "";
+		left: -20px;
+		top: -1px;
+		height: 1px;
+		width: 50px;
+		background: #dadada;
+	}
+	.sender {
+		color: $lightblue;
+		font-weight: 600;
+		margin-top: 1rem;
+		img {
+			margin-right: 0.5rem;
+		}
+	}
+}
+
+#main {
+	padding-top:120px;
+	@include mq($until: desktop) {
+    padding-top: 85px;
+  }
+	section {
+		padding: 6rem 0;
+		@include mq($until: desktop) {
+      padding: 3rem 0;
+    }
+		&.top_content {
+			background: radial-gradient(50.63% 77.84% at 73.8% 37.41%, #254A99 0%, #2B2B6F 96.53%);
+			color: $white;
+			font-size: rem(23px);
+			line-height: 150%;
+			padding: 240px 0 50px 0;
+			@include mq($until: desktop) {
+	      padding-top: 150px;
+	    }
+			p {
+				margin-bottom: 2rem;
+			}
+			.button {
+
+			}
+			.features {
+				color: $lightblue;
+				font-weight: 600;
+				div[class*="col-"] {
+					position: relative;
+					padding-left: 60px;
+					padding-right: 20px;
+					margin-bottom: 4rem;
+					font-size: rem(20px);
+					@include mq($until: desktop) {
+			      margin-bottom: 2rem;
+			    }
+					&:before {
+						content: url("../assets/img/icons/info-checkbox.png");
+						position: absolute;
+						left: 12px;
+						top: 6px;
+					}
+				}
+			}
+		}
+	}
+}

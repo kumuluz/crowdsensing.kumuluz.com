@@ -1,0 +1,34 @@
+body.smart-cities {
+	#main {
+		padding-top: 0;
+		.top_content {
+			.img-shadow {
+				position: relative;
+				img {
+					position: relative;
+					z-index: 2;
+				}
+				&:after {
+					content: "";
+					height: 100%;
+					width: 100%;
+					background: #2B2B6F;
+					border-radius: 0;
+					position: absolute;
+					left: 30px;
+					top: 30px;
+					z-index: 1;
+				}
+			}
+			.features {
+				margin-top: 4rem;
+				.heading {
+					padding-top: 4rem;
+					padding-bottom: 2rem;
+					color: $white;
+					font-weight: 400;
+				}
+			}
+		}
+	}
+}

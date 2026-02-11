@@ -1,6 +1,6 @@
 var gulp        = require('gulp'),
 	browserSync = require('browser-sync').create(),
-	sass        = require('gulp-sass')(require('node-sass')),
+	sass        = require('gulp-sass')(require('sass')),
 	del         = require('del'),
 	useref      = require('gulp-useref'),
 	uglify      = require('gulp-uglify'),
@@ -76,7 +76,7 @@ gulp.task('concatente', function(){
 
 // Copy assets to dist
 gulp.task('assets', function() {
-  return gulp.src('src/assets/**/*')
+  return gulp.src('src/assets/**/*', { encoding: false })
   .pipe(gulp.dest('dist/assets'))
 })
 
